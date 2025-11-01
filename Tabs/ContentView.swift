@@ -15,9 +15,9 @@ struct ContentView: View {
                     Label("Home", systemImage: "house")
                 }
             
-            Text("Welcome Screen")
+            Text("Search Screen")
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("Search", systemImage: "magnifyingglass")
                 }
             
             Text("Contador Screen")
