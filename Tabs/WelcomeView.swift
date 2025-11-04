@@ -10,8 +10,10 @@ import SwiftUI
 struct WelcomeView: View {
     @AppStorage("myName") var savedName: String = ""
     @AppStorage("myAge") var savedAge: Int = 0
+    
     @State var name: String = ""
     @State var ageText: String = ""
+    
     var body: some View {
         VStack{
             TextField("Dime tu nombre:", text: $name)

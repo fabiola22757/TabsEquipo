@@ -10,21 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("Welcome Screen")
+           WelcomeView()
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("Casita", systemImage: "house")
                 }
             
-            Text("Search Screen")
+            CounterView()
                 .tabItem {
-                    Label("Search", systemImage: "magnifyingglass")
+                    Label("Contadoration", systemImage: "clock")
                 }
             
-            Text("Contador Screen")
-                .tabItem {
-                    Image(systemName: "clock")
-                    Text("Contador")
-                }
         }.accentColor(.red)
     }
 }
